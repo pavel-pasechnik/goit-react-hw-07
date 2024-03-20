@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-clean-order"
+  ],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "declaration-property-unit-allowed-list": {
+      "letter-spacing": ["em"],
+      "line-height": []
+    }
+  },
+  "customSyntax": "postcss-styled-components"
+}
