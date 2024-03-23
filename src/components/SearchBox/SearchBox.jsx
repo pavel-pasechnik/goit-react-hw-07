@@ -1,7 +1,9 @@
-import { useId } from 'react';
-import { IoIosSearch } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
+import { IoIosSearch } from 'react-icons/io';
+import { useId } from 'react';
+
 import { changeFilter } from '../../redux/filtersSlice.js';
+
 import css from './SearchBox.module.css';
 
 export default function SearchBox() {

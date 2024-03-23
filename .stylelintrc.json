@@ -4,12 +4,18 @@
     "stylelint-config-standard-scss",
     "stylelint-config-clean-order"
   ],
-  "plugins": ["stylelint-order"],
+  "plugins": ["stylelint-order", "stylelint-prettier"],
   "rules": {
+    "prettier/prettier": true,
     "declaration-property-unit-allowed-list": {
       "letter-spacing": ["em"],
       "line-height": []
     }
   },
-  "customSyntax": "postcss-styled-components"
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "customSyntax": "postcss-styled-components"
+    }
+  ]
 }

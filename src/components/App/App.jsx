@@ -1,6 +1,6 @@
-import ContactForm from '../ContactForm/ContactForm';
-import SearchBox from '../SearchBox/SearchBox';
-import ContactList from '../ContactList/ContactList';
+import ContactForm from '../ContactForm/ContactForm.jsx';
+import ContactList from '../ContactList/ContactList.jsx';
+import SearchBox from '../SearchBox/SearchBox.jsx';
 
 import css from './App.module.css';
 
