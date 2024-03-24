@@ -1,14 +1,13 @@
+import { changeFilter, selectFilter } from '../../redux/filtersSlice.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { IoIosSearch } from 'react-icons/io';
 import { useId } from 'react';
-
-import { changeFilter } from '../../redux/filtersSlice.js';
 
 import css from './SearchBox.module.css';
 
 export default function SearchBox() {
   const searchBarId = useId();
-  const selectNameFilter = useSelector(state => state.filters.name);
+  const filter = useSelector(selectFilter);
   const dispatch = useDispatch();
 
   const handleSearch = event => {
@@ -23,7 +22,7 @@ export default function SearchBox() {
         type='text'
         name='searchBar'
         id={searchBarId}
-        value={selectNameFilter}
+        value={filter}
         onChange={handleSearch}
       />
       <IoIosSearch className={css.search} />
