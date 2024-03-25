@@ -8,7 +8,6 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react-redux/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:import/recommended',
     'plugin:prettier/recommended',
     'stylelint',
     'prettier',
@@ -23,6 +22,7 @@ module.exports = {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'react/jsx-filename-extension': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
+    'sort-imports': 'error',
   },
   globals: {
     getApp: false,
